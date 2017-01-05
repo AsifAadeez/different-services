@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<center>
+	 		{% for i in details %}
+			 	<p ><b>Category ID:</b>&nbsp{{ i.cat_id}}</p>
+			 	<p ><b>Service ID:</b>&nbsp{{ i.service_id }}</p>
+			 	<p ><b>Service Name:</b>&nbsp{{ i.service_name }}</p>
+	 		{% endfor %}
+	 	</center>
+	</body>
+</html>

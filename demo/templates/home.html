@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                  }
+
+            td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                   }
+
+            tr:nth-child(even) {
+                                background-color: #dddddd;
+                               }
+        </style>
+    </head>
+        <body>
+            <table>
+                   <tr>
+                        <th>Category Id</th>
+                        <th>Category Name</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                   </tr>
+                        {% for i in obj %}  
+                   <tr>
+                        <td>{{ i.cat.category_id }}</td>     
+                        <td>{{ i.cat.category_name }}</td>
+                        <td>{{ i.category_address }}</td>
+                        <td>{{ i.category_phonenumber }}</td>
+                   </tr>
+                        {% endfor %}
+            </table>
+        </body>
+</html>
